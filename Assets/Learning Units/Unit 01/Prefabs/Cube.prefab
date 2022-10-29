@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4658449635414541757}
   - component: {fileID: 2942998281980195619}
   - component: {fileID: 3841074446910850210}
+  - component: {fileID: 6583643968547295566}
+  - component: {fileID: 986195697489684995}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -114,3 +116,30 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6583643968547295566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7718993894057591670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bacb54419f8fecc44aa48b12b34b3ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveAmount: {x: 0, y: 0, z: 0}
+--- !u!114 &986195697489684995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7718993894057591670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4401843734f4db949984454da75e0201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefabToCreate: {fileID: 7718993894057591670}
+  locationToCreateObject: {fileID: 1564417549240929494}

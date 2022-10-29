@@ -10,15 +10,21 @@ public class ChangeTextValue : MonoBehaviour
 
     TextMeshProUGUI textMeshProUGUI;
 
+
+    [SerializeField] GameObject trackedObject;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        textMeshProUGUI = GetComponent<TextMeshProUGUI>();
+       float trackedObjectYPosition = trackedObject.transform.position.y;
+       textMeshProUGUI.text = trackedObjectYPosition.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       float trackedObjectYPosition = trackedObject.transform.position.y;
+       textMeshProUGUI.text = trackedObjectYPosition.ToString();
     }
 }
